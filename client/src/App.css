@@ -1,0 +1,89 @@
+/* src/App.css */
+.App {
+  text-align: center;
+  /* background: rgb(177, 200, 240); /* Comentado para usar o tema padrão do Bootstrap ou um mais neutro */
+}
+
+/* Estilos do logo do React, podem ser removidos se não estiver usando o template padrão do CRA */
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  /* background-color: #7193d8; */ /* Comentado */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  /* color: #7193d8; */ /* Comentado */
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* .body{
+  color: #f4afaf; /* Comentado */
+/* } */
+
+/* Adicionar alguns estilos globais ou melhorias se necessário */
+body {
+  background-color: #f8f9fa; /* Um fundo cinza claro para a página */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Uma fonte mais moderna */
+}
+
+.container {
+  max-width: 960px; /* Limita a largura máxima do conteúdo principal */
+}
+
+/* Estilos para os cards e formulários para consistência */
+.card {
+  border-radius: 0.5rem; /* Bordas arredondadas para os cards */
+}
+
+.form-label {
+  font-weight: 500; /* Deixa os labels um pouco mais destacados */
+}
+
+/* Melhorias para a lista de alunos */
+.list-group-item {
+  padding: 1rem 1.25rem; /* Aumenta o padding interno dos itens da lista */
+}
+
+.list-group-item strong {
+  color: #333; /* Cor mais escura para os textos em negrito */
+}
+
+/* Estilo para a imagem do QR Code, pode ser ajustado */
+.qr-code-image {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #dee2e6; /* Borda sutil */
+  padding: 4px; /* Pequeno preenchimento interno */
+  background-color: #fff; /* Fundo branco para o QR code */
+  border-radius: 0.25rem; /* Bordas levemente arredondadas */
+}
+
+/* Feedback messages */
+.alert {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}

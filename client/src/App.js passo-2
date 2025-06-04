@@ -1,0 +1,60 @@
+
+import './App.css';
+import React, { useState } from 'react';
+
+function CadastroAluno() {
+  const [values, setValues] = useState({ nome: '', idade: '' });
+  const [nome, setNome] = useState('');
+  const [idade, setIdade] = useState('');
+  console.log(values);//aqui verificaremos os valores passados dos formularios
+  //sera responsavel por capturar os valores dos imputs
+  //e exibir no console log
+  const handleChangeValues = (value) =>{
+    //estaremos pegando o prevValue de set Values aqui 
+    //
+    setValues(prevValue=>({
+      ...prevValue,//aqui ele pegara os valores antigos do objeto
+      [value.target.name]:value.target.value,
+    }))
+  };
+
+  const handleClickButton = () =>{
+    console.log(values)
+  }
+  return (
+    <div className="container mt-5">
+      <div className="row justify-content-center">
+        <div className="col-md-6">
+          <h2>Cadastro de Aluno</h2>
+          <form>
+            <div className="form-group">
+              <label htmlFor="nome">Nome:</label>
+              <input
+                type="text"
+                className="form-control"
+                id="nome"
+                name='nome'
+                onChange={handleChangeValues}
+              />
+            </div>
+            <div className="form-group">
+              <label htmlFor="idade">Idade:</label>
+              <input
+                type="text"
+                name='idade'
+                className="form-control"
+                id="idade"
+                onChange={handleChangeValues}
+              />
+            </div>
+            <button type="submit" className="btn btn-primary">
+              Cadastrar
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default CadastroAluno;

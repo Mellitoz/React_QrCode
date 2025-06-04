@@ -1,0 +1,17 @@
+Para Funcionar seguir os passos:
+
+Parte do Banco de Dados:
+1 - Crie o Banco de Dados crudreact;
+2 - Crie dentro do Banco a tabelas Alunos com os campos:
+id int PK A_I;
+nome char(80);
+idade char(3);
+
+Parte do React
+
+1 - descompactar a pasta projeto modelo;
+2 - acessa-la pelo VS Code
+3 - entrar na pasta cliente de dar o comamdo npm i;
+4 - entrar na pasta server de dar o comamdo npm i;
+5 - entrar na pasta server de dar o comamdo npm init;
+6 - entrar na pasta cliente de dar o comamdo npm start;
